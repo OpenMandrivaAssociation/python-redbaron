@@ -12,8 +12,10 @@ BuildRequires:  pkgconfig(python)
 BuildRequires:  python3dist(setuptools)
 BuildRequires:  python3dist(pypandoc)
 BuildRequires:  python3dist(baron)
+BuildRequires:  python3dist(pygments)
 
 Requires: python3dist(baron)
+Requires: python3dist(pygments)
 
 Provides:	python-%{pypi_name} = %{EVRD}
 
