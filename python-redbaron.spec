@@ -2,11 +2,11 @@
 
 Name:           python-%{pypi_name}
 Version:        0.9.2
-Release:        1
+Release:        2
 Summary:        Bottom-up approach to refactoring in python
 License:        LGPLv3
 URL:            https://github.com/PyCQA/redbaron
-Source:         https://files.pythonhosted.org/packages/92/14/d04d376cca5108e62edeee2d2fc0261af6474d9aebe0b4334721785bc035/redbaron-%{version}.tar.gz
+Source:         https://files.pythonhosted.org/packages/source/r/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  pkgconfig(python)
 BuildRequires:  python3dist(setuptools)
