@@ -13,6 +13,8 @@ BuildRequires:  python3dist(setuptools)
 BuildRequires:  python3dist(pypandoc)
 BuildRequires:  python3dist(baron)
 BuildRequires:  python3dist(pygments)
+BuildRequires:  python3dist(pip)
+BuildRequires:  python3dist(wheel)
 
 Requires: python3dist(baron)
 Requires: python3dist(pygments)
@@ -39,4 +41,3 @@ sed -i -e 's/\r//' README.md
 %files -n python-%{pypi_name}
 %{python_sitelib}/%{pypi_name}/
 %{python_sitelib}/%{pypi_name}-*.egg-info/
-#{python_sitelib}/__pycache__/*
