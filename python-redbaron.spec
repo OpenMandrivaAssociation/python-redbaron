@@ -10,7 +10,7 @@ Source:         https://files.pythonhosted.org/packages/source/r/%{pypi_name}/%{
 BuildArch:      noarch
 BuildRequires:  pkgconfig(python)
 BuildRequires:  python3dist(setuptools)
-#BuildRequires:  python3dist(pandoc)
+BuildRequires:  python3dist(pandoc)
 BuildRequires:  python3dist(pypandoc)
 BuildRequires:  python3dist(baron)
 BuildRequires:  python3dist(pygments)
