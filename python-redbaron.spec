@@ -11,15 +11,19 @@ BuildArch:      noarch
 BuildRequires:  pkgconfig(python)
 BuildRequires:  python3dist(setuptools)
 #BuildRequires:  python3dist(pandoc)
-#BuildRequires:  python3dist(pypandoc)
+BuildRequires:  python3dist(pypandoc)
 BuildRequires:  python3dist(baron)
 BuildRequires:  python3dist(pygments)
 BuildRequires:	python3dist(pytest)
 #BuildRequires:  python3dist(pip)
 #BuildRequires:  python3dist(wheel)
+# docs
+BuildRequires:  python3dist(ipython)
+BuildRequires:  python3dist(matplotlib)
+BuildRequires:  python3dist(sphinx)
 
-#Requires: python3dist(baron)
-#Requires: python3dist(pygments)
+Requires: python3dist(baron)
+Requires: python3dist(pygments)
 Requires: python3dist(async-generator)
 
 Provides:	python-%{pypi_name} = %{EVRD}
