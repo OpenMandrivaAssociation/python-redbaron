@@ -15,8 +15,6 @@ BuildRequires:  python3dist(setuptools)
 BuildRequires:  python3dist(baron)
 BuildRequires:  python3dist(pygments)
 BuildRequires:	python3dist(pytest)
-#BuildRequires:  python3dist(pip)
-#BuildRequires:  python3dist(wheel)
 # docs
 BuildRequires:  python3dist(ipython)
 BuildRequires:  python3dist(matplotlib)
