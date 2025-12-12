@@ -2,7 +2,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.9.2
-Release:        3
+Release:        4
 Summary:        Bottom-up approach to refactoring in python
 License:        LGPLv3
 URL:            https://github.com/PyCQA/redbaron
