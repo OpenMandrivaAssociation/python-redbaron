@@ -2,27 +2,28 @@
 
 Name:           python-%{pypi_name}
 Version:        0.9.2
-Release:        5
+Release:        6
 Summary:        Bottom-up approach to refactoring in python
 License:        LGPLv3
+Group:          Development/Python
 URL:            https://github.com/PyCQA/redbaron
 Source:         https://files.pythonhosted.org/packages/source/r/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  pkgconfig(python)
-BuildRequires:  python3dist(setuptools)
-#BuildRequires:  python3dist(pandoc)
-#BuildRequires:  python3dist(pypandoc)
-BuildRequires:  python3dist(baron)
-BuildRequires:  python3dist(pygments)
-BuildRequires:	python3dist(pytest)
+BuildRequires:  python%{pyver}dist(setuptools)
+#BuildRequires:  python%{pyver}dist(pandoc)
+#BuildRequires:  python%{pyver}dist(pypandoc)
+BuildRequires:  python%{pyver}dist(baron)
+BuildRequires:  python%{pyver}dist(pygments)
+BuildRequires:	python%{pyver}dist(pytest)
 # docs
-BuildRequires:  python3dist(ipython)
-BuildRequires:  python3dist(matplotlib)
-BuildRequires:  python3dist(sphinx)
+BuildRequires:  python%{pyver}dist(ipython)
+BuildRequires:  python%{pyver}dist(matplotlib)
+BuildRequires:  python%{pyver}dist(sphinx)
 
-Requires: python3dist(baron)
-Requires: python3dist(pygments)
-Requires: python3dist(async-generator)
+Requires: python%{pyver}dist(baron)
+Requires: python%{pyver}dist(pygments)
+Requires: python%{pyver}dist(async-generator)
 
 Provides:	python-%{pypi_name} = %{EVRD}
 
